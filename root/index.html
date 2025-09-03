@@ -411,7 +411,30 @@
 
   loadNews();
 </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCsqhKuD1Xjk2BLWSbkyOFSZsDf6aw92oM",
+    authDomain: "theindianjournal-51251.firebaseapp.com",
+    projectId: "theindianjournal-51251",
+    storageBucket: "theindianjournal-51251.firebasestorage.app",
+    messagingSenderId: "831907139276",
+    appId: "1:831907139276:web:a4ba36c86e27ee1ee67c69",
+    measurementId: "G-RXWM92R33M"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white text-center p-4 mt-6">
