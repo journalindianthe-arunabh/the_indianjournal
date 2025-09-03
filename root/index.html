@@ -383,13 +383,34 @@
 </script>
 
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center p-4 mt-6">
-    &copy; 2025 The Indian Journal. All Rights Reserved.
-  </footer>
+ <div id="news-container"></div>
 
-</body>
-</html>
+<script type="module">
+  import { db } from "./firebase-init.js";
+  import { collection, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+  const container = document.getElementById("news-container");
+
+  async function loadNews() {
+    const q = query(collection(db, "articles"), orderBy("createdAt", "desc"));
+    const snapshot = await getDocs(q);
+
+    snapshot.forEach(doc => {
+      const article = doc.data();
+      container.innerHTML += `
+        <div class="article">
+          <h2>${article.title}</h2>
+          ${article.imageUrl ? `<img src="${article.imageUrl}" width="300">` : ""}
+          <p>${article.content}</p>
+          ${article.videoUrl ? `<iframe width="400" height="250" src="${article.videoUrl}" frameborder="0" allowfullscreen></iframe>` : ""}
+        </div>
+        <hr>
+      `;
+    });
+  }
+
+  loadNews();
+</script>
 
 
   <!-- Footer -->
