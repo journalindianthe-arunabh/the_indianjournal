@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: journalindianthe-arunabh/the_indianjournal   # your repo
+  branch: main                                       # or master if your repo uses that
+
+media_folder: "root/uploads"       # where images/videos get stored
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage Content"
+    files:
+      - file: "root/index.html"
+        label: "Index Page"
+        name: "index"
+        fields:
+          - { label: "Main Article", name: "body", widget: "markdown" }
