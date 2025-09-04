@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main   # or master if your repo uses it
+media_folder: "root/uploads"       # where uploaded files (images) go
+public_folder: "/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - file: "root/index.html"
+        label: "Homepage Content"
+        name: "index"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+          - { label: "Image", name: "image", widget: "image" }
