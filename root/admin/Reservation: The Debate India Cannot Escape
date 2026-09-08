@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Indian Journal - Reservation: The Debate India Cannot Escape</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">The Indian Journal</h1>
+      <nav>
+                
+  <a href="about.html" class="px-3">About</a>
+  <a href="parliament.html" class="px-3">Parliament</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article Section -->
+  <section class="container mx-auto p-6 bg-white shadow-lg mt-6 rounded">
+    <h2 class="text-3xl font-bold mb-4">Reservation: The Debate India Cannot Escape</h2>
+
+    <!-- Featured Image -->
+    <img src="https://www.google.com/imgres?q=reservation&imgurl=https%3A%2F%2Fstaticprintenglish.theprint.in%2Fwp-content%2Fuploads%2F2026%2F08%2FUntitled-design-4-5-696x392.png%3Fcompress%3Dtrue%26quality%3D80%26w%3D376%26dpr%3D2.6&imgrefurl=https%3A%2F%2Ftheprint.in%2Fopinion%2Freservation-hatao-andalon-women%2F3032264%2F&docid=kws9ML6EHvwPQM&tbnid=qCVouo8pgBrOrM&vet=12ahUKEwim45rEld-WAxXBR2wGHXINEp4QnPAOegQIPhAA..i&w=696&h=392&hcb=2&ved=2ahUKEwim45rEld-WAxXBR2wGHXINEp4QnPAOegQIPhAA" 
+         alt="" 
+         class="w-full h-96 object-cover rounded mb-6">
